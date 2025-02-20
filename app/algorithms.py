@@ -1,8 +1,8 @@
 # algorithms.py
 def modular_exponentiation(a, x, p):
-    """Возведение в степень по модулю."""
+    """Возведение в степень по модулю. Бинарное возведение в степень
+    https://www.youtube.com/watch?v=2V_zU4DNdvU&ab_channel=IgorMamay """
     result = 1
-    a = a % p  # Убедимся, что a меньше p
     while x > 0:
         if x % 2 == 1:  # Если x нечетное
             result = (result * a) % p
