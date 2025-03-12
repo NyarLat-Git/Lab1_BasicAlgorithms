@@ -18,6 +18,8 @@ def gcd_extended(a, b):
     while V[0] != 0:
         q = U[0] // V[0]
         U, V = V, [U[0] - q * V[0]] + [U[i] - q * V[i] for i in range(1, 3)]
+# Заменяем U на V.
+
     
     return U[0], U[1], U[2]  # НОД, x, y
 
