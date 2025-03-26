@@ -39,6 +39,15 @@ def gcd_extended(a, b):
     # Когда V[0] станет 0, алгоритм завершает работу.
     return U[0], U[1], U[2]  # Возвращаем: (НОД, x, y)
 
+"""
+def gcd_extended(a, b):
+    if b == 0:
+        return a, 1, 0
+    gcd, x1, y1 = gcd_extended(b, a % b)
+    x = y1
+    y = x1 - (a // b) * y1
+    return gcd, x, y
+"""
 
 def modular_inverse(e, z):
     """Вычисление инверсии e по модулю z. """
